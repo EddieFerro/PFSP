@@ -1,8 +1,8 @@
 # PFSP: Prefix-Free Syncmer Parsing
 
-PFSP parses a collection of sequences (for example a pangenome of haplotype assemblies) into a dictionary of
-distinct phrases and a parse, like prefix-free parsing (PFP), but with phrase boundaries set by closed syncmers
-instead of a rolling-hash window. This bounds the size of every phrase.
+PFSP parses a collection of sequence into a dictionary of 
+distinct phrases and a parse, like prefix-free parsing (PFP), 
+but with phrase boundaries set by closed syncmers instead of a rolling-hash window. This bounds the size of every phrase.
 
 ## Build
 
@@ -10,7 +10,7 @@ Requirements: a C++17 compiler, CMake ≥ 3.20, zlib. Other dependencies (CLI11,
 at configure time at pinned versions.
 
 ```bash
-git clone https://github.com/<user>/PFSP.git
+git clone https://github.com/EddieFerro/PFSP.git
 cd PFSP
 cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j        # -> build/PFSP
@@ -47,7 +47,6 @@ The same `-k`, `-s` and `--seed` must be used wherever the parse is used later (
 
 ## Citation
 
-<!-- paper reference -->
 
 ## License
 
